@@ -1,0 +1,17 @@
+article#welcome {
+	background: #fff;
+	border: 1px dashed #fff;
+	padding: 0.5em;
+}
+
+article#welcome header {
+	background: #E7E7E7;
+	color: #5FD7FF;
+	font-size: 1.5em;
+	font-weight: normal;
+	text-shadow: 1px 1px 1px #7F7F7F;
+	border-bottom: 2px solid #ccc;
+	margin: 0;
+	padding: 0.8em 0 0.8em 0;
+	text-align: center;
+}

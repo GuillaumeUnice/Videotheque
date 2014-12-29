@@ -1,0 +1,92 @@
+.note{
+	float: right;
+}
+.note a {
+	//display: inline-block;
+	background-color: rgb(41,199,255);
+	padding: 4px;
+	border-radius: 6px;
+	color: white;
+	text-decoration: none;
+}
+.note a:hover {
+background-color: #0D80A6;	
+}
+
+#liste {
+    float: right;
+    background-color: rgb(67,67,67);
+    padding-left: calc(20% - 2px);
+    border-left: 2px solid rgb(41,199,255);
+    width: 80%;
+}
+
+#nav_left {
+    position: fixed;
+    clear: both;
+
+    margin-top: 1px;
+	background-color: rgb(67,67,67);
+	border-left: 2px solid rgb(41,199,255);
+    min-width: 200px;
+}
+
+#nav_left h2 {
+    color: white;
+    text-indent: 20px;
+}
+
+#nav_left ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#nav_left li {
+    text-indent: 20px;
+    color: white;
+}
+
+#nav_left li:hover:not(.title){
+    color: #f5f5f5;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+#nav_left input.selected {
+    color: green;
+}
+
+#nav_left li.selected:before {
+    content: "× ";
+}
+#nav_left li.selected:after {
+    content: " ×";
+}
+
+#nav_left h3 {
+    margin: 5px;
+    text-indent: 20px;
+    color: white;
+    font-size: 1.4em;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#nav_left a.bottom{
+    position: relative;
+    bottom: 0;
+}
+
+#nav_left a{
+	color : white;
+	text-decoration: none;
+    padding-left : 8px;
+    line-height: 20px;
+    min-width: 200px;
+}
+#nav_left a:hover{
+    color: #f5f5f5;
+    background-color: darkgray;
+}
+

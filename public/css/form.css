@@ -1,0 +1,113 @@
+/*Quand requis ou selectionné mais invalid*/
+input:required:invalid, input:focus:invalid {
+  background-image: url(../images/invalid.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  -moz-box-shadow: none;
+}
+/*Qand requis et valid*/
+input:required:valid {
+  background-image: url(../images/valid.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+/*special select*/
+select:focus, button:focus{
+	outline-style: solid;
+	outline-color: rgb(150, 150, 150);
+	outline-width: 2px;
+}
+
+/*Enleve la bordure orangé du TAB*/
+input:focus, textarea:focus, button:focus{
+	outline-style: none;
+	-moz-outline-style : none;
+}
+
+/*Quand selectionné et invalid*/
+input:focus:invalid, textarea:focus:invalid{
+
+  -moz-box-shadow: 0px 0px 10px rgb(188,0,0); 
+  -webkit-box-shadow: 0px 0px 10px rgb(188,0,0); 
+  box-shadow: 0px 0px 10px rgb(188,0,0);
+  
+			
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+
+}
+/*Quand selectionné et valid*/
+input[type=text]:focus:valid, input[type=email]:focus:valid, textarea:focus:valid{
+
+	-moz-box-shadow: 0px 0px 10px green; 
+	-webkit-box-shadow: 0px 0px 10px green; 
+	box-shadow: 0px 0px 10px green;
+  
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+
+}
+
+input, textarea, select, button{
+ padding: 3px;
+ border: 2px solid rgb(230, 230, 230);
+ border-radius: 7px;
+ margin-right: 30px;
+ }
+ 
+/*Enleve bordure disgracieuse du select sur chrome du moins*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, etc.) */
+    select { 
+        border-style : solid none solid solid; 
+    }
+}
+
+input[type=radio] {
+ background-color:transparent;
+ border:none;
+ width:10px;
+ }
+input[type=submit]:focus, input[type=submit]:hover, input[type=reset]:focus, input[type=reset]:hover, button:hover, button:focus{
+  -moz-box-shadow: 0px 0px 30px rgb(180, 180, 180); 
+  -webkit-box-shadow: 0px 0px 30px rgb(180, 180, 180); 
+  box-shadow: 0px 0px 30px rgb(180, 180, 180); 
+			
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+	
+}
+
+input[type=submit], input[type=reset] , button{
+ width:100px;
+ margin-left:5px;	
+ cursor:pointer;
+ 
+ }
+ .border_form {
+ margin: auto;
+ margin-bottom:10px;
+ padding-left: 10px;
+ border: 3px solid rgb(150, 150, 150);
+ width: 95%;
+ }
+ 
+ /*taille des textarea */
+ textarea {
+	min-height: 250px;
+	height: 250px;
+	max-height: 450px;
+	min-width: 97.5%;
+	width: 97.5%;
+	max-width: 97.5%;
+ }
+ 
